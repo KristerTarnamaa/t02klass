@@ -1,12 +1,15 @@
 public class Proov1{
 	public static void main(String[] args){
-		Ristkylik laud1=new Ristkylik(2, 1);
-		Ristkylik laud2=new Ristkylik(1.5, 1);
-		Ristkylik laud3=new Ristkylik(2, 1.5);
-		System.out.println(laud1.pindala()+" "+laud1.ymberm66t());
-		System.out.println(laud2.pindala());
-		System.out.println(laud3.pindala());
-		System.out.println(laud1);
-		System.out.println(laud2.toString());
+		
+		Ristkylik laud1=new Ristkylik(6, 10);  //teeb uue ristküliku
+		Ristkylik laud2=new Ristkylik(3, 2.5);
+		
+		System.out.println(laud1.pindala()+" "+laud1.ymberm66t());  //arvutab ja prindib pindala ja ümbermõõdu
+		
+		//Manuaalselt lisatud tekstiga
+		System.out.println("Ristküliku laud2 pindala on: "+ laud2.pindala()+" Ning ümbermõõduks: "+laud2.ymberm66t());
+		
+		//toString funktsiooni kasutades
+		System.out.println(laud1.toString());
 	}
 }
